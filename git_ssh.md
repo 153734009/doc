@@ -49,3 +49,6 @@ git服务器常用SSH私钥公钥对来进行授权，这样可以省却登陆�
         git add .  
         git commit -m "description"  
         git push  
+
+##links
+1. http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html
