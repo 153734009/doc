@@ -22,7 +22,11 @@
         （这步可选）点击高级修改MAC地址为 00:00:00:00:00:01 
         点击底下的 "确定" 这时真正创建虚拟机的网卡
         会自动生成/etc/udev/rules.d/70-persistent-net.rules文件
+        ```
+
 文件内容如下：
+
+        ```
         SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", ATTR{address}=="00:00:00:00:00:01", ATTR{type}=="1", KERNEL=="eth*", NAME="eth0"
         ```
 
@@ -50,7 +54,11 @@
         ```
         /etc/sysconfig/network-scripts/
         如果已开启DHCP服务，可能不用进行这步设置
+        ```
+
 配置如下:
+
+        ```
         DEVICE=eth0
         HWADDR=00:00:00:00:00:01 #这里设置第2不得MAC地址
         TYPE=Ethernet
