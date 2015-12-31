@@ -10,5 +10,8 @@ git push origin :b1
 git status 查看所做的修改
 git rm .vmware_bridge.md.swp 删除指定文件
 git commit am 删除所有物理删了的文件
+git config --global core.quotepath false 设置不对0x80以上字符进行quote,
+    本库配置文件在.git/config
+git rm 三层模型.png
 ```
 
