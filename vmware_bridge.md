@@ -48,3 +48,26 @@ GATEWAY=172.18.107.254 #设置和宿主机一样的网关
 重启
 -----
 1. service network restart
+
+特别说明
+-----
+1. 不仅可以桥接有线网卡，也可以桥接无线网络。
+2. 在编辑虚拟网络-->选择要桥接到的网卡
+3. 配置参考
+```
+DEVICE=eth1  
+HWADDR=00:00:00:00:00:02  
+TYPE=Ethernet  
+ONBOOT=yes
+NM_CONTROLLED=yes
+BOOTPROTO=static
+DEFROUTE=yes
+PEERDNS=yes
+PEERROUTES=yes
+IPV4_FAILURE_FATAL=yes
+IPV6INIT=no
+NAME="System eth1"
+IPADDR=192.168.0.19
+NETMASK=255.255.255.0
+GATEWAY=192.168.0.1 #设置和宿主机一样的网关
+```
