@@ -39,6 +39,7 @@ class AnoleYield
      */
     private function yieldAsc($c1, $c2)
     {
+        //batchSize($size) 可以用时间换内存，通过batchSize设置从硬盘读取
         $c1->rewind();
         $c2->rewind();
         while($c1->current()!=null || $c2->current()!=null){
