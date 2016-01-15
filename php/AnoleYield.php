@@ -77,22 +77,20 @@ class AnoleYield
         $c1->rewind();
         $c2->rewind();
         while($c1->current()!=null || $c2->current()!=null){
-            if($c1->current()==null){
-                $row = $c2->current();
+            $row1 = $c1->current();
+            $row2 = $c2->current();
+            if($row1==null){
                 $c2->next();
-                yield $row;
-            }else if($c2->current()==null){
-                $row = $c1->current();
+                yield $row2;
+            }else if($row2==null){
                 $c1->next();
-                yield $row;
-            }else if($c1->current()[$sortKey] >= $c2->current()[$sortKey]){
-                $row = $c1->current();
+                yield $row1;
+            }else if($row1[$sortKey] >= $row2[$sortKey]){
                 $c1->next();
-                yield $row;
-            }else if($c1->current()[$sortKey] < $c2->current()[$sortKey]){
-                $row = $c2->current();
+                yield $row1;
+            }else if($row1[$sortKey] < $row2[$sortKey]){
                 $c2->next();
-                yield $row;
+                yield $row2;
             }
         }
     }

@@ -7,7 +7,6 @@ netstat -anp|grep 9501|awk '{printf $7}'|cut -d/ -f1
 tcp 0   0   0.0.0.0:9501    0.0.0.0:*   LISTEN  3709/php
 第7个 "3709/php" cut掉 /php
 ```
-
 2. 获取本机eth0 ip
 ```
 ifconfig | grep -Eo "inet addr:[0-9\.]+" | awk -F ":" '{print $2}'
