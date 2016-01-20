@@ -3,12 +3,12 @@
 @author     153734009
 @since      2015年12月31日  
 
-----------
 1. tar -xvf /download/nginx-1.9.9.tar.gz
 
 2. cd nginx-1.9.9
 
 3. 选择性安装一些扩展
+```
 ./configure  
 --prefix=/alidata/nginx-1.9.9 指定安装目录   
 --with-stream tcp代理支持  
@@ -32,7 +32,7 @@
 --with-debug  
 --add-module=/home/src/ngx_http_substitutions_filter_module  
 --add-module=/home/src/echo-nginx-module-0.58  
-
+```
 4. make
 
 5. make install
