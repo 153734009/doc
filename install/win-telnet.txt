@@ -1,0 +1,9 @@
+开启：
+1. telnet在win7里是默认不开启的
+	控制面板==>程序==>打开或关闭window功能
+	找到 Telnet客户端 ，勾选，点确认安装
+2. 重开 cmd 调出dos界面
+	telnet localhost 8080
+
+如果字符不显示:
+	进入telnet后按ctrl+】就行了
