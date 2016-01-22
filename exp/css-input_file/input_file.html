@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>改变input file的默认样式</title>
+        <link href="bootstrap.css" rel="stylesheet" />
+        <style type="text/css">
+            .file-box{ position:relative;width:300px}
+            .file-box input[type='text']{
+                position:relative;
+                z-index:1;
+            }
+            .file-box input[type='file']{ 
+                position:absolute; 
+                top:0; 
+                left:0px; 
+                height:100%;
+                opacity: 0;
+                width:100%;
+                z-index:99; 
+            }
+        </style>
+    </head>
+    <body>
+        <div class="input-append file-box" >
+          <input type="text">
+          <span class="add-on">选择文件</span>
+            <input type="file" onchange="this.parentNode.getElementsByTagName('input')[0].value=this.value;">
+        </div>
+    </body>
+</html>

@@ -1,0 +1,79 @@
+/*返回浏览器默认样式*/
+@charset "utf-8"; /*class="back" 返回浏览器元素默认*/
+	.back html,.back address,
+　　.back blockquote,
+　　.back body,.back dd,.back div,
+　　.back dl,.back dt,.back fieldset,.back form,
+　　.back frame,.back frameset,
+　　.back h1,.back h2,.back h3,.back h4,
+　　.back h5,.back h6,.back noframes,
+　　.back ol,.back p,.back ul,.back center,
+　　.back dir,.back hr,.back menu,.back pre{display:block}
+　　.back li{display:list-item}
+　　.back head{display:none}
+　　.back table{display:table}
+　　.back tr{display:table-row}
+　　.back thead{display:table-header-group}
+　　.back tbody{display:table-row-group}
+　　.back tfoot{display:table-footer-group}
+　　.back col{display:table-column}
+　　.back colgroup{display:table-column-group}
+　　.back td,.back th{display:table-cell;}
+　　.back caption{display:table-caption}
+　　.back th{font-weight:bolder;text-align:center}
+　　.back caption{text-align:center}
+　　.back body{margin:8px;line-height:1.12}
+　　.back h1{font-size:2em;margin:.67em}
+　　.back h2{font-size:1.5em;margin:.75em}
+　　.back h3{font-size:1.17em;margin:.83em}
+　　.back h4,.back p,
+　　.back blockquote,.back ul,
+　　.back fieldset,.back form,
+　　.back ol,.back dl,.back dir,
+　　.back menu{margin:1.12em}
+　　.back h5{font-size:.83em;margin:1.5em}
+　　.back h6{font-size:.75em;margin:1.67em}
+　　.back h1,.back h2,.back h3,.back h4,
+　　.back h5,.back h6,.back b,
+　　.back strong{font-weight:bolder}
+　　.back blockquote{margin-left:40px;margin-right:40px}
+　　.back i,.back cite,.back em,
+　　.back var,.back address{font-style:italic}
+　　.back pre,.back tt,.back code,
+　　.back kbd,.back samp{font-family:monospace}
+　　.back pre{white-space:pre}
+　　.back button,.back textarea,
+　　.back input,.back object,
+　　.back select{display:inline-block;}
+　　.back big{font-size:1.17em}
+　　.back small,sub,sup{font-size:.83em}
+　　.back sub{vertical-align:sub}
+　　.back sup{vertical-align:super}
+　　.back table{border-spacing:2px;}
+　　.back thead,.back tbody,
+　　.back tfoot{vertical-align:middle}
+　　.back td,.back th{vertical-align:inherit}
+　　.back s,.back strike,.back del{text-decoration:line-through}
+　　.back hr{border:1pxinset}
+　　.back ol,.back ul,.back dir,
+　　.back menu,.back dd{margin-left:40px}
+　　.back ol{list-style-type:decimal}
+　　.back olul,.back ulol,
+　　.back ulul,.back olol{margin-top:0;margin-bottom:0}
+　　.back u,.back ins{text-decoration:underline}
+　　.back br:before{content:"/A"}
+　　.back :before,.back :after{white-space:pre-line}
+　　.back center{text-align:center}
+　　.back abbr,.back acronym{font-variant:small-caps;letter-spacing:0.1em}
+　　.back :link,.back :visited{text-decoration:underline}
+　　.back :focus{outline:thindottedinvert}
+　　/*Beginbidirectionalitysettings(donotchange)*/
+　　.back BDO[DIR="ltr"]{direction:ltr;unicode-bidi:bidi-override}
+　　.back BDO[DIR="rtl"]{direction:rtl;unicode-bidi:bidi-override}
+　　.back *[DIR="ltr"]{direction:ltr;unicode-bidi:embed}
+　　.back *[DIR="rtl"]{direction:rtl;unicode-bidi:embed}
+　　@mediaprint{
+　　.back h1{page-break-before:always}
+　　.back h1,.back h2,.back h3,
+　　.back h4,.back h5,.back h6{page-break-after:avoid}
+　　.back ul,.back ol,.back dl{page-break-before:avoid}

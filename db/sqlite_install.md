@@ -1,7 +1,5 @@
 ##sqlite3的安装
-
-------
-###简介###
+###简介  
 目前，几乎所有版本的 Linux 操作系统都附带 SQLite。使用sqlite3命令检查是否安装了，如果已安装会进入sqlite命令行
 
 1. 如果没有安装，需要下载:http://www.sqlite.org/download.html

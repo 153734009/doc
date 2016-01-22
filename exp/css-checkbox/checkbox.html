@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Demo</title>
+	<style type="text/css">
+		/*checkbox 部分*/
+		input[type='checkbox']{
+			position:relative;
+		}
+		input[type='checkbox']:after{
+			content: url(nocheck.png);
+			position: absolute;
+			top: -2px;
+			left: -2px
+		}
+		input[type=checkbox]:checked::after {
+			content: url(checked.png);
+			position: absolute;
+			top: -2px;
+			left: -2px
+		}
+		/*radio 部分*/
+		input[type='radio']{
+			position:relative;
+		}
+		input[type='radio']:after{
+			content: url(noradio.png);
+			position: absolute;
+			top: -2px;
+			left: -2px
+		}
+		input[type='radio']:checked::after {
+			content: url(radioed.png);
+			position: absolute;
+			top: -2px;
+			left: -2px
+		}
+	</style>
+</head>
+<body>
+	<input type="checkbox"  name="chk_list" />  <br /><br /><br />
+	<input type="radio"  name="radio" /><input type="radio"  name="radio" />
+</body>
+</html>

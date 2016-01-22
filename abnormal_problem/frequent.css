@@ -1,0 +1,34 @@
+/*垂直居中*/
+input {line-height:normal;line-height:43px\9;}
+ 
+/* 1. 手机判断屏幕应用不同样式 */
+<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+//如果屏幕宽度小于640px的话
+@media screen and (max-width: 640px) {}
+//可视区域width=device-width，初始化放大，最大放大
+<meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1" />
+//去除默认苹果菜单栏
+<meta name="apple-mobile-web-app-capable" content="yes" />
+//苹果菜单栏颜色
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+//  设置打印CSS
+<link rel="stylesheet" href="显示用CSS的地址" type="text/css" media="screen" /> 
+<link rel="stylesheet" href="打印用CSS的地址" type="text/css" media="print" /> 
+
+//使用ie7解释
+<meta http-equiv="X-UA-Compatible" content="IE=7" /> 
+//background简写	
+background:transparent none/url() repeat scroll 0% 0%
+
+// 文字折行问题
+.break-word { word-wrap: break-word; break-word: break-all; }
+
+//改变select的高度 size="2"
+//如果size="1",高度设置将失效；这时，第一个元素需要加select才能显示
+<select name="sex" id="sex" class="form-control" size="2" required>
+	<option selected>-请选择性别-</option>
+	<option value="2">女士</option>
+	<option value="1">男士</option>
+	<option value="0">保密</option>
+</select>
