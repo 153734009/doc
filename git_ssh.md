@@ -59,6 +59,8 @@ git branch 查看本地分支
 git branch -a 查看全部分支（远程分支）
 git branch -d b1 删除本地分支
 git branc -r -d origin/b1 删除远程分支  
+git branch demo 本地新建一个分支
+git fetch  demo 切换到demo分支
 git push origin :b1  或 git push origin --delete b2
 ```
 ```
@@ -71,5 +73,22 @@ git config --global core.quotepath false 设置不对0x80以上字符进行quote
 git rm 三层模型.png
 ```
 
+8. 分支合并
+```
+git checkout b1
+    Already on 'b1'
+git pull origin b2
+    remote: Counting objects: 3, done.
+    remote: Compressing objects: 100% (1/1), done.
+    remote: Total 3 (delta 1), reused 3 (delta 1), pack-reused 0
+    Unpacking objects: 100% (3/3), done.
+    From github.com:153734009/doc
+     * branch            b2         -> FETCH_HEAD
+    Merge made by recursive.
+     b2 |    1 +
+     1 files changed, 1 insertions(+), 0 deletions(-)
+     create mode 100644 b2
+```
+![process](http://github.com/doc/_img/blob/master/git.jpg "github")
 ##links
 1. http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html
