@@ -59,15 +59,15 @@ rabbitmqctl stop_app
 ### 交换机类型介绍
 #### 1.Direct Exchange 
 Direct Exchange – 处理路由键。需要将一个队列绑定到交换机上，要求该消息与一个特定的路由键完全匹配。这是一个完整的匹配。如果一个队列绑定到该交换机上要求路由键 “dog”，则只有被标记为“dog”的消息才被转发，不会转发dog.puppy，也不会转发dog.guard，只会转发dog。  
-![Direct](http://github.com/_img/blob/master/direct_exchange.png "Direct")
+![Direct](https://raw.githubusercontent.com/153734009/doc/master/_img/direct_exchange.png "Direct")
 
 #### 2.Fanout Exchange
 Fanout Exchange – 不处理路由键。你只需要简单的将队列绑定到交换机上。一个发送到交换机的消息都会被转发到与该交换机绑定的所有队列上。很像子网广播，每台子网内的主机都获得了一份复制的消息。Fanout交换机转发消息是最快的.  
-![Fanout](http://github.com/_img/blob/master/Fanout_exchange.png "Fanout")
+![Fanout](https://raw.githubusercontent.com/153734009/doc/master/_img/fanout_exchange.png "Fanout")
 
 #### 3.Topic Exchange
 Topic Exchange – 将路由键和某模式进行匹配。此时队列需要绑定要一个模式上。符号“#”匹配一个或多个词，符号“*”匹配不多不少一个词。因此“audit.#”能够匹配到“audit.irs.corporate”，但是“audit.*” 只会匹配到“audit.irs”。topic交换机工作原理如下：  
-![Topic](http://github.com/_img/blob/master/Topic_exchange.png "Topic")
+![Topic](https://raw.githubusercontent.com/153734009/doc/master/_img/topic_exchange.png "Topic")
 #### 4.Headers exchange 
 Headers exchange - 头交换机用于路由根据消息头更容易分类消息的情况，比如：路由键不是字符串，而是整数 hash等等。头路由可以看做特殊的direct；使用了Headers exchange模式的话，会忽略路由键
 

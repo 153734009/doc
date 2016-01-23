@@ -89,6 +89,7 @@ git pull origin b2
      1 files changed, 1 insertions(+), 0 deletions(-)
      create mode 100644 b2
 ```
-![process](http://github.com/doc/_img/blob/master/git.jpg "github")
+
+![process](https://raw.githubusercontent.com/153734009/doc/master/_img/git.jpg "process")
 ##links
 1. http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html
