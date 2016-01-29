@@ -1,4 +1,5 @@
 ##amqp扩展安装
+@php    5.6
 @since  2016年01月23日
 
 ### 先安装依赖librabbitmq
